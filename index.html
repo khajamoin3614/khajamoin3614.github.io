@@ -1,84 +1,157 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diagrid Consultants</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f5f5f5;
-            color: #333;
-        }
-        header {
-            background-color: #1a1a1a;
-            color: white;
-            padding: 40px 0;
-            text-align: center;
-        }
-        section {
-            background: white;
-            margin: 30px auto;
-            padding: 30px;
-            max-width: 1000px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #1a1a1a;
-            border-bottom: 2px solid #ccc;
-            padding-bottom: 5px;
-        }
-        ul {
-            line-height: 1.8;
-        }
-        footer {
-            background: #1a1a1a;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diagrid Consultants</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+    header {
+      background-color: #000;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header img {
+      max-width: 150px;
+    }
+    header h1 {
+      margin: 1rem 0 0.5rem;
+    }
+    header p {
+      margin: 0;
+      font-style: italic;
+    }
+    .section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      color: #00548f;
+    }
+    .services, .contact {
+      display: grid;
+      gap: 1rem;
+    }
+    .services li {
+      margin-bottom: 0.5rem;
+    }
+    .contact-info {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .office {
+      flex: 1;
+      margin: 1rem;
+      min-width: 250px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+      padding: 2rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .gallery figure {
+      margin: 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      overflow: hidden;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .gallery figcaption {
+      padding: 0.5rem;
+      background: #f4f4f4;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+    footer {
+      background-color: #000;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <img src="LOGO ED-modified.png" alt="Diagrid Consultants Logo">
+    <h1>Diagrid Consultants</h1>
+    <p>Your Dream, Engineered to Perfection</p>
+  </header>
 
-<header>
-    <h1>Welcome to Diagrid Consultants</h1>
-    <p>Efficient, Safe, and Innovative Structural Solutions</p>
-</header>
+  <div class="section">
+    <h2>Welcome to Diagrid</h2>
+    <p>
+      At Diagrid, we specialize in delivering efficient, safe, and innovative structural solutions tailored to modern construction. Our certified Professional Engineers ensure every project meets the highest standards of safety, quality, and compliance.
+    </p>
+  </div>
 
-<section>
-    <h2>About Us</h2>
-    <p>At Diagrid, we specialize in delivering efficient, safe, and innovative structural solutions tailored to meet the needs of modern construction. Our team includes certified Professional Engineers (P.E.), ensuring every project meets the highest standards of safety, quality, and code compliance. We support projects from concept through completion with precision and professionalism.</p>
-</section>
-
-<section>
+  <div class="section">
     <h2>Our Services</h2>
-    <ul>
-        <li><strong>Structural Calculations:</strong> Accurate and code-compliant load calculations for all structural elements.</li>
-        <li><strong>Structural Analysis & Design:</strong> Advanced design using modern software and engineering principles.</li>
-        <li><strong>3D Rendering:</strong> High-quality photorealistic visualizations for interiors and exteriors.</li>
-        <li><strong>Cost Estimation:</strong> Reliable budgeting and planning assistance.</li>
-        <li><strong>AutoCAD Drawings:</strong> Precision drafting for all project types.</li>
+    <ul class="services">
+      <li><strong>Structural Calculations:</strong> Code-compliant load calculations for safety and stability.</li>
+      <li><strong>Structural Analysis & Design:</strong> Advanced analysis for new and renovation projects.</li>
+      <li><strong>3D Rendering:</strong> Interior/Exterior renderings and walkthroughs for realistic visualization.</li>
+      <li><strong>Cost Estimation:</strong> Accurate budgeting and planning throughout the process.</li>
     </ul>
-</section>
+  </div>
 
-<section>
+  <div class="section">
+    <h2>Project Gallery</h2>
+    <div class="gallery">
+      <figure>
+        <img src="IMG-20250428-WA0016.jpg" alt="Modern Residential Building">
+        <figcaption>Modern Residential Design – Emphasizing Open Spaces and Natural Light</figcaption>
+      </figure>
+      <figure>
+        <img src="IMG-20250428-WA0017.jpg" alt="Contemporary Apartment Complex">
+        <figcaption>Contemporary Apartment Complex – Vertical Greenery & Urban Aesthetics</figcaption>
+      </figure>
+      <figure>
+        <img src="IMG-20250430-WA0019.jpg" alt="Commercial Bayview Village">
+        <figcaption>Commercial Hub – Bayview Village with Brand-Forward Retail Design</figcaption>
+      </figure>
+      <figure>
+        <img src="IMG-20250430-WA0030.jpg" alt="Retail Structure with Diagrid Pattern">
+        <figcaption>Retail Building with Diagrid Façade – Blending Art and Architecture</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="section">
     <h2>Contact Us</h2>
-    <p><strong>Phone (US):</strong> +1 (516) 371 4948<br>
-       <strong>Email:</strong> <a href="mailto:moin@diagridc.com">moin@diagridc.com</a><br>
-       <strong>Address:</strong> 117 Newbridge Rd, Hicksville, NY 11801, USA</p>
-    <p><strong>Phone (India):</strong> +91 9177686619<br>
-       <strong>Email:</strong> <a href="mailto:diagriddesign1@aol.com">diagriddesign1@aol.com</a><br>
-       <strong>Location:</strong> Hyderabad, Telangana</p>
-</section>
+    <div class="contact-info">
+      <div class="office">
+        <h3>US Office</h3>
+        <p><i class="fas fa-phone"></i> +1 (516) 371 4948</p>
+        <p><i class="fas fa-envelope"></i> moin@diagridc.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> 117 Newbridge Rd, Hicksville, NY 11801</p>
+      </div>
+      <div class="office">
+        <h3>India Office</h3>
+        <p><i class="fas fa-phone"></i> +91 9177686619</p>
+        <p><i class="fas fa-envelope"></i> diagriddesign1@aol.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Hyderabad, Telangana</p>
+      </div>
+    </div>
+  </div>
 
-<footer>
-    <p>© 2025 Diagrid Consultants. All rights reserved.</p>
-</footer>
-
+  <footer>
+    &copy; 2025 Diagrid Consultants. All rights reserved.
+  </footer>
 </body>
 </html>
