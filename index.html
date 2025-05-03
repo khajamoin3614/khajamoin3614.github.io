@@ -1,167 +1,41 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Diagrid Consultants</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
-    }
-    header {
-      background-color: #003366;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-    header img {
-      max-width: 150px;
-    }
-    header h1 {
-      margin: 1rem 0 0.5rem;
-      font-size: 2rem;
-    }
-    header p {
-      margin: 0;
-      font-style: italic;
-    }
-    .section {
-      padding: 2rem 1rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .section h2 {
-      color: #009688;
-    }
-    .services, .contact {
-      display: grid;
-      gap: 1rem;
-    }
-    .services li {
-      margin-bottom: 0.5rem;
-    }
-    .contact-info {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-    .office {
-      flex: 1;
-      margin: 1rem;
-      min-width: 250px;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1rem;
-      padding: 2rem 1rem;
-      max-width: 1200px;
-      margin: auto;
-    }
-    .gallery figure {
-      margin: 0;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-      overflow: hidden;
-    }
-    .gallery img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .gallery figcaption {
-      padding: 0.5rem;
-      background: #f4f4f4;
-      font-size: 0.9rem;
-      text-align: center;
-    }
-    footer {
-      background-color: #003366;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-  </style>
+  <link rel="stylesheet" href="diagrid-style.css" />
 </head>
 <body>
   <header>
-    <img src="LOGO ED-modified.png" alt="Diagrid Consultants Logo">
-    <h1>Diagrid Consultants</h1>
-    <p>Your Dream, Engineered to Perfection</p>
+    <img src="https://i.ibb.co/rK3qPfD/logo.png" alt="Diagrid Logo">
+    <nav>
+      <ul>
+        <li><a href="#welcome">Home</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#specializations">Specializations</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#why-us">Why Us</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-
-  <div class="section">
-    <h2>Welcome to Diagrid</h2>
-    <p>
-      At Diagrid, we specialize in delivering efficient, safe, and innovative 
-      structural solutions tailored to meet the needs of modern Construction. Our team includes certified Professional Engineers 
-      (P.E.), ensuring that every project meets the highest standards of safety, quality, and code compliance. We are committed to 
-      supporting projects from concept through completion with precision, professionalism, and client-focused service.
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>Our Services</h2>
-    <ul class="services">
-      <li><strong>Structural Calculations:</strong> Accurate and code-compliant load calculations for all structural elements, ensuring stability, safety, and efficiency in every design.</li>
-      <li><strong>Structural Analysis & Design:</strong> Advanced analysis and detailed design of Concrete, Steel, Wood structures using state-of-the-art software and engineering principles for both new construction and renovations.</li>
-      <li><strong>3D Rendering:</strong> High-quality, photorealistic visualizations that bring your concepts to life. Our 3D services include:
-        <ul>
-          <li>Interior Design Renderings – Realistic layouts, material finishes, and lighting concepts.</li>
-          <li>Elevation Design – Detailed exterior façade visuals for both modern and traditional styles.</li>
-          <li>Exterior & Interior Walkthroughs – Immersive animated tours that help clients visualize the space before construction begins.</li>
-        </ul>
-      </li>
-      <li><strong>Cost Estimation:</strong> Reliable and detailed cost projections to assist in budgeting, planning, and decision-making throughout the design and construction process.</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Project Gallery</h2>
-    <div class="gallery">
-      <figure>
-        <img src="IMG-20250428-WA0016.jpg" alt="Modern Residential Building">
-        <figcaption>Modern Residential Design – Emphasizing Open Spaces and Natural Light</figcaption>
-      </figure>
-      <figure>
-        <img src="IMG-20250428-WA0017.jpg" alt="Contemporary Apartment Complex">
-        <figcaption>Contemporary Apartment Complex – Vertical Greenery & Urban Aesthetics</figcaption>
-      </figure>
-      <figure>
-        <img src="IMG-20250430-WA0019.jpg" alt="Commercial Bayview Village">
-        <figcaption>Commercial Hub – Bayview Village with Brand-Forward Retail Design</figcaption>
-      </figure>
-      <figure>
-        <img src="IMG-20250430-WA0030.jpg" alt="Retail Structure with Diagrid Pattern">
-        <figcaption>Retail Building with Diagrid Façade – Blending Art and Architecture</figcaption>
-      </figure>
+  <section id="welcome"><h1>WELCOME TO DIAGRID</h1></section>
+  <section id="expertise"><h2>Our Expertise</h2></section>
+  <section id="specializations"><h2>Our Specializations</h2></section>
+  <section id="projects"><h2>Recent Projects</h2></section>
+  <section id="why-us"><h2>Why Choose Us?</h2></section>
+  <section id="testimonials"><h2>Client Stories</h2></section>
+  <section class="team-section">
+    <h2>Our Team</h2>
+    <div class="team-members">
+      <p>Mohammed Luqman (P.E.)</p>
+      <p>Mohammed Moin</p>
+      <p>Syed Ali</p>
     </div>
-  </div>
-
-  <div class="section">
-    <h2>Contact Us</h2>
-    <div class="contact-info">
-      <div class="office">
-        <h3>US Office</h3>
-        <p><i class="fas fa-phone"></i> +1 (516) 371 4948</p>
-        <p><i class="fas fa-envelope"></i> moin@diagridc.com</p>
-        <p><i class="fas fa-map-marker-alt"></i> 117 Newbridge Rd, Hicksville, NY 11801</p>
-      </div>
-      <div class="office">
-        <h3>India Office</h3>
-        <p><i class="fas fa-phone"></i> +91 9177686619</p>
-        <p><i class="fas fa-envelope"></i> diagriddesign1@aol.com</p>
-        <p><i class="fas fa-map-marker-alt"></i> Hyderabad, Telangana</p>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    &copy; 2025 Diagrid Consultants. All rights reserved.
-  </footer>
+  </section>
+  <footer id="contact"><h3>Contact Us</h3></footer>
 </body>
 </html>
