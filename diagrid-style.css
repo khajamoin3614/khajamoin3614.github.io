@@ -78,3 +78,7 @@ nav ul li a {
   align-items: center;
   gap: 10px;
 }
+.site-logo {
+  width: 150px; /* Adjust the width as needed */
+  height: auto; /* Maintains aspect ratio */
+}
